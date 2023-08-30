@@ -1,0 +1,41 @@
+.banner__info{
+  flex: 0 1 39.8%;
+  margin-top: 18.51%;
+  margin-left: 4px
+
+}
+.info__title{
+  @extend%font-add;
+  text-transform: uppercase;
+  color: $color-primary;
+  @include font($size: 9.6rem, $height: 9.6rem, $weight: 500);
+  margin-bottom: 24px;
+  span{
+    color: $color-additional;
+  }
+}
+.info__text{
+  color: $color-paragraphs;
+  @include font($size: 3.2rem, $height: 3.2rem, $weight: 500);
+  margin-bottom: 67px;
+
+}
+.info__btn{
+  color: $color-primary;
+  @include font($size: 2.4rem, $height: 3.2rem, $weight: 600);
+  text-transform: uppercase;
+
+
+padding: 20px 72px;
+border-radius: 48px;
+background: $color-btn;
+&:hover {
+  background: $color-primary;
+  color: $color-additional;
+}
+
+&:active{
+      transform: translate(0, 0.25em);
+  }
+}
+

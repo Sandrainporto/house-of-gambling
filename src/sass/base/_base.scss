@@ -13,22 +13,22 @@ body {
 [class*=__container] {
     max-width: $content-width;
     margin: 0px auto;
-    padding: 0px 40px;
-    @include media-laptop {
-        padding: 0 46px;
-      }
+    // padding: 0px 40px;
+    // @include media-laptop {
+    //     padding: 0 46px;
+    //   }
     
-      @include media-mobile {
-        padding: 0 21px;
-      }
+    //   @include media-mobile {
+    //     padding: 0 21px;
+    //   }
   }
   
 
 h1 {
     @extend%font-add;
-    // @include media-mobile {
-    //     @include font($height: 4.2rem, $size: 3.2rem);
-    // }
+    text-transform: uppercase;
+    color: $color-primary;
+    @include font($size: 9.6rem, $height: 9.6rem, $weight: 400);
 }
 
 // h2 {

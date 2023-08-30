@@ -36,7 +36,7 @@
     color: $color-primary;
     @include font($size: 1.6rem, $height: 2rem, $weight: 400);
     @extend %transition;
-    padding: 14px;
+    padding: 13px;
     border-radius: 24px;
     border: 2px solid $color-border-btn;
 
