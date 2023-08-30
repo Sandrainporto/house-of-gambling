@@ -1,0 +1,57 @@
+html {
+    font-size: 10px;
+    scroll-behavior: smooth;
+}
+
+body {
+    @extend %font-prim;
+    @include font($size: 1.6rem, $height: 2.6rem, $weight: normal);
+}
+
+[class*=__container] {
+    max-width: $content-width;
+    margin: 0px auto;
+    padding: 0px 40px;
+    @include media-laptop {
+        padding: 0 46px;
+      }
+    
+      @include media-mobile {
+        padding: 0 21px;
+      }
+  }
+  
+
+
+h1 {
+    @extend%font-add;
+
+    @include media-mobile {
+        @include font($height: 4.2rem, $size: 3.2rem);
+    }
+}
+
+h2 {
+    @include font(3.4rem, 4.6rem);
+    @include media-mobile {
+        @include font($height: 3.3rem, $size: 2.4rem);
+    }
+}
+
+h3 {
+    @include font(2.4rem, 3.4rem);
+    @include media-mobile {
+        @include font($height: 3.1rem, $size: 2.1rem);
+    }
+}
+
+h4 {
+    @include font(2.2rem, 3.0rem, 600);
+    @include media-tablet {
+        @include font($height: 3.0rem, $size: 2.0rem);
+    }
+}
+
+h5 {
+    @include font(1.6rem, 2.6rem);
+}
