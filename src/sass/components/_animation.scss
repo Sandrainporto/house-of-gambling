@@ -1,0 +1,48 @@
+.banner__animation {
+  flex: 0 1 20.35%; //333.8
+  max-height: 1119px;
+  overflow: hidden;
+  display: flex;
+  gap: 15px;
+}
+
+
+
+@keyframes imagesliderUp {
+  0% {
+    transform: translate(0%, 0);
+  }
+
+  100% {
+    transform: translate(0, -100%);
+  }
+}
+
+@keyframes imagesliderDown {
+  0% {
+    transform: translate(0%, -100%);
+  }
+
+  100% {
+    transform: translate(0, 0);
+  }
+}
+
+
+.animation__chain img {
+  display: block;
+  width: 100px;
+  height: 109%;
+  animation-delay: 0s;
+  animation-direction: normal;
+  animation-fill-mode: none;
+}
+
+.animation__chain_up {
+  animation: imagesliderUp 20s linear infinite;
+}
+
+.animation__chain_down {
+  animation: imagesliderDown 20s linear infinite;
+}
+
