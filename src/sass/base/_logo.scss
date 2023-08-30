@@ -1,0 +1,24 @@
+.header__logo {
+  width: 295px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  gap: 12px;
+  align-items: center;
+  color: $color-primary;
+  height: 32px;
+  margin-right: 10px;
+  &:hover {
+    filter:drop-shadow(1px 1px 20px $color-primary) invert(5%)}
+}
+
+
+.logo__image {}
+
+.logo__title {
+  text-transform: uppercase;
+  @include font($size: 2.3rem, $height: 2rem, $weight: 400);
+
+}
+
+

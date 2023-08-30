@@ -1,0 +1,286 @@
+.link {
+  transition: all 0.3s ease-out;
+}
+
+body {
+  font-family: "Lexend", sans-serif;
+}
+
+@font-face {
+  font-family: "Futura PT Medium";
+  src: url("../../assets/fonts/FuturaPT-Medium.eot");
+  src: url("../../assets/fonts/FuturaPT-Medium.woff") format("woff"), url("../../assets/fonts/FuturaPT-Medium.ttf") format("truetype");
+  font-weight: 500;
+  font-style: normal;
+}
+
+html {
+  font-size: 10px;
+  scroll-behavior: smooth;
+}
+
+body {
+  height: 100%;
+  color: #FFFFFF;
+  background: #110A1D;
+}
+
+[class*=__container] {
+  max-width: 1670px;
+  margin: 0px auto;
+  padding: 0px 40px;
+}
+@media (max-width: 1670px) {
+  [class*=__container] {
+    padding: 0 46px;
+  }
+}
+@media (max-width: 414px) {
+  [class*=__container] {
+    padding: 0 21px;
+  }
+}
+
+.header__logo {
+  width: 295px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  gap: 12px;
+  align-items: center;
+  color: #FFFFFF;
+  height: 32px;
+  margin-right: 10px;
+}
+.header__logo:hover {
+  filter: drop-shadow(1px 1px 20px #FFFFFF) invert(5%);
+}
+
+.logo__title {
+  text-transform: uppercase;
+  font-size: 2.3rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 2rem;
+}
+
+.tags {
+  display: flex;
+}
+.tags > * {
+  margin-right: 7px;
+}
+
+.tag {
+  border-radius: 90px;
+  padding: 0 14px;
+  cursor: pointer;
+  font-size: 1.3rem;
+  font-style: normal;
+  font-weight: normal;
+  line-height: 2.8rem;
+}
+.tag_selected {
+  background-color: #FFFFFF;
+  color: #ffffff;
+}
+.tag_bordered {
+  border: 1px solid #478BF9;
+}
+.tag_colored {
+  background-color: #F5F5F5;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  border: 0;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+
+:focus,
+:active {
+  outline: none;
+}
+
+a:focus,
+a:active {
+  outline: none;
+}
+
+nav,
+footer,
+header,
+aside {
+  display: block;
+}
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+  -ms-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+}
+
+input,
+button,
+textarea {
+  font-family: inherit;
+}
+
+input::-ms-clear {
+  display: none;
+}
+
+button {
+  cursor: pointer;
+}
+
+button::-moz-focus-inner {
+  padding: 0;
+  border: 0;
+}
+
+a,
+a:visited {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+ul li {
+  list-style: none;
+}
+
+img {
+  vertical-align: top;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-size: inherit;
+  font-weight: inherit;
+}
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  min-height: 100%;
+  max-width: 1670px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+@media (max-width: 414px) {
+  .wrapper {
+    padding: 0 21px;
+  }
+}
+
+.header {
+  margin-top: 29px;
+}
+
+.header__container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  align-items: center;
+  padding: 19px 41px 20px 48px;
+  border-radius: 64px;
+  border: 4px solid #478BF9;
+}
+
+.header__burger {
+  display: none;
+}
+
+.main {
+  flex: 1 1 auto;
+}
+
+.header__navigation {
+  width: 588px;
+}
+@media (max-width: 768px) {
+  .header__navigation {
+    display: none;
+  }
+}
+
+.navigation__list {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  gap: 32px;
+}
+
+.navigation__link {
+  color: #FFFFFF;
+  font-size: 1.6rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 2rem;
+}
+.navigation__link:hover {
+  border-bottom: 2.5px solid #478BF9;
+}
+
+.header__buttons {
+  width: 287px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  flex-wrap: nowrap;
+  align-items: center;
+}
+
+.link {
+  text-transform: uppercase;
+  color: #FFFFFF;
+  font-size: 1.6rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 2rem;
+  padding: 14px;
+  border-radius: 24px;
+  border: 2px solid #9DADF2;
+}
+.link:hover {
+  border: 1px solid #478BF9;
+  background: #478BF9;
+}
+.link:active {
+  transform: translate(0, 0.25em);
+}
+
+.language-btn {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  align-items: center;
+  gap: 8px;
+}
+
+.buttons__signup-btn {
+  border: 1px solid #478BF9;
+  background: #478BF9;
+}
+.buttons__signup-btn:hover {
+  background: #FFFFFF;
+  color: #478BF9;
+}

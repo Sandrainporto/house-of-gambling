@@ -1,0 +1,21 @@
+.header{
+  margin-top: 29px;
+
+}
+.header__container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  align-items: center;
+  padding: 19px 41px 20px 48px;
+  border-radius: 64px;
+  border: 4px solid $color-border;
+
+}
+
+.header__burger {
+  display: none;
+}
+
+

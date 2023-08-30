@@ -1,4 +1,3 @@
-@import "./base/normalize";
 
 //Abstract
 @import "./abstract/constants";
@@ -13,17 +12,17 @@
 @import "./base/tags";
 @import "./base/hamburger";
 @import "./base/modal";
+@import "./base/normalize";
+
 
 //Layouts
 @import "./layouts/wrapper";
 @import "./layouts/header";
-@import "./layouts/columns";
+@import "./layouts/main";
 @import "./layouts/footer";
 
+
 //Components
-@import "./components/contact-us";
-@import "./components/promo";
 @import "./components/navigation";
-@import "./components/tools";
-@import "./components/strategies";
-@import "./components/about-us";
+
+
