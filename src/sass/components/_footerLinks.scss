@@ -1,0 +1,22 @@
+.footer__links {
+}
+.links {
+}
+.links__list {
+  display: flex;
+  flex-wrap: nowrap;
+  gap: 40px;
+}
+.links__item {
+}
+.links__link {
+  color: $color-primary;
+  @include font($size: 1.6rem, $height: 2rem, $weight: 400);
+  &:hover {
+    border-bottom: 2.5px solid $color-border;
+}
+}
+
+.links__link_colored {
+  color: $color-additional;
+}

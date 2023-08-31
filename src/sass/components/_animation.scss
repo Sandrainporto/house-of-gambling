@@ -4,6 +4,7 @@
   overflow: hidden;
   display: flex;
   gap: 15px;
+
 }
 
 
@@ -39,10 +40,15 @@
 }
 
 .animation__chain_up {
-  animation: imagesliderUp 20s linear infinite;
+  animation: imagesliderUp 35s linear infinite;
 }
 
 .animation__chain_down {
-  animation: imagesliderDown 20s linear infinite;
+  animation: imagesliderDown 35s linear infinite;
 }
 
+.animation__chain:last-child img {
+
+  height: 115%;
+
+}

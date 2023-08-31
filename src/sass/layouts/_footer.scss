@@ -1,0 +1,19 @@
+.footer {
+}
+.footer__content {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  max-height: 126px;
+  padding: 40px 123px 22px 134px;
+
+
+  border-radius: 64px 64px 0px 0px;
+  border-top: 4px solid var(--main-blue-478-bf-9, #478BF9);
+  border-right: 4px solid var(--main-blue-478-bf-9, #478BF9);
+  border-left: 4px solid var(--main-blue-478-bf-9, #478BF9);
+  background: $color-article-background;
+
+}
+._container {
+}
