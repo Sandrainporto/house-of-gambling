@@ -12,7 +12,11 @@
 }
 
 
-.logo__image {}
+.logo__image {
+  @media screen and ( max-width: 1150px) {
+    display: none;
+  }
+}
 
 .logo__title {
   text-transform: uppercase;
