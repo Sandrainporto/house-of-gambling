@@ -3,31 +3,28 @@
   flex-direction: column;
   align-items: flex-end;
   gap: 14px;
+
   @media screen and (max-width:1262px) {
- align-items: flex-start;
- gap: 7px;
-   }
+    align-items: flex-start;
+    gap: 7px;
+  }
 }
-.media {
-}
+
 .media__title {
   color: $color-primary;
   @include font($size: 1.6rem, $height: 2rem, $weight: 400);
   font-size: calc(13.61px + 2 * (100vw / 1640));
-  
-
 }
+
 .media__list {
   display: flex;
   flex-direction: row;
   flex-wrap: nowrap;
   gap: 8px;
 }
-.media__item {
-}
-.media__link {
 
-  img{
+.media__link {
+  img {
     @media screen and (max-width:1031px) {
       width: 27px;
       height: 27px;
@@ -35,9 +32,7 @@
   }
 }
 
-
 .media__link:hover img {
-
   -webkit-filter: sepia(1) hue-rotate(320deg) saturate(10);
   filter: sepia(1) hue-rotate(192deg) saturate(6);
 }

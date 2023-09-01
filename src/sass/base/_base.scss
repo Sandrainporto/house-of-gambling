@@ -1,63 +1,27 @@
 html {
-    font-size: 10px;
-    scroll-behavior: smooth;
+  font-size: 10px;
+  scroll-behavior: smooth;
 }
 
 body {
-    height: 100%;
-    // width: 100%;
-    @extend %font-prim;
-    color: $color-primary;
-    background: $color-background;
-    // overflow-x:hidden;
+  height: 100%;
+  @extend %font-prim;
+  color: $color-primary;
+  background: $color-background;
 }
+
 body._lock {
-    overflow: hidden;
-  }
+  overflow: hidden;
+}
 
-[class*=__container] {
-    max-width: 1640px;
-    margin: 0 auto;
-
-    // padding: 0px 40px;
-    // @include media-laptop {
-    //     padding: 0 46px;
-    //   }
-    
-    //   @include media-mobile {
-    //     padding: 0 21px;
-    //   }
-  }
-  
+[class*="__container"] {
+  max-width: 1640px;
+  margin: 0 auto;
+}
 
 h1 {
-    @extend%font-add;
-    text-transform: uppercase;
-    color: $color-primary;
-    @include font($size: 9.6rem, $height: 9.6rem, $weight: 400);
+  @extend%font-add;
+  text-transform: uppercase;
+  color: $color-primary;
+  @include font($size: 9.6rem, $height: 9.6rem, $weight: 400);
 }
-
-// h2 {
-//     @include font(3.4rem, 4.6rem);
-//     @include media-mobile {
-//         @include font($height: 3.3rem, $size: 2.4rem);
-//     }
-// }
-
-// h3 {
-//     @include font(2.4rem, 3.4rem);
-//     @include media-mobile {
-//         @include font($height: 3.1rem, $size: 2.1rem);
-//     }
-// }
-
-// h4 {
-//     @include font(2.2rem, 3.0rem, 600);
-//     @include media-tablet {
-//         @include font($height: 3.0rem, $size: 2.0rem);
-//     }
-// }
-
-// h5 {
-//     @include font(1.6rem, 2.6rem);
-// }
