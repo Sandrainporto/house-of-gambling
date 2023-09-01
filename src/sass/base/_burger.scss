@@ -1,0 +1,127 @@
+@media screen and (max-width: 1031px) {
+
+  .header {
+    margin-top: 10px;
+    padding: 0px 5px 0px 5px;
+  }
+
+  .header__container {
+    padding: 9px 18px;
+    border: 2px solid #478BF9;
+    justify-content: flex-end;
+    gap: 8px;
+  }
+
+  .header__burger {
+    display: block;
+    position: relative;
+    z-index: 100;
+    margin-right: 27px;
+    cursor: pointer;
+
+    .burger__icon,
+    .burger__icon::before,
+    .burger__icon::after {
+      left: 0;
+      position: absolute;
+      height: 2.67px;
+      width: 22.25px;
+      transition: left 0.3s ease 0s;
+      background-color: white;
+      box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+      border-radius: 16px;
+
+    }
+
+    .burger__icon::before,
+    .burger__icon::after {
+      content: "";
+      display: block;
+      transition: 0.5s;
+    }
+
+    .burger__icon::before {
+      transform: translateY(-6px);
+    }
+
+    .burger__icon::after {
+      transform: translateY(6px);
+    }
+
+
+    .burger__icon.active,
+    .burger__icon.active::before,
+    .burger__icon.active::after {
+      top: 30%;
+      height: 2px;
+      width: 21.2px;
+    }
+
+    .burger__icon.active {
+      height: 0;
+    }
+
+    .burger__icon.active::before {
+      transform: rotate(45deg);
+    }
+
+    .burger__icon.active::after {
+      transform: rotate(-45deg);
+    }
+  }
+
+
+  .header__navigation {
+    position: fixed;
+    z-index: 10;
+    top: 72px;
+    right: -135%;
+    width: 320px;
+    height: 569px;
+    background: $color-background;
+    padding: 25px 5px;
+    transition: right 0.7s ease;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+
+  .header__navigation.active {
+    right: 0;
+
+    .navigation__content {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 30px;
+    }
+
+    .buttons__language-btn {
+      display: none;
+    }
+
+    .header__buttons {
+      gap: 5px;
+
+      a {
+        text-align: center;
+        width: 300px;
+        padding-bottom: 10px;
+      }
+    }
+  }
+
+  .language-btn__image_globe {
+    display: block;
+    cursor: pointer;
+    z-index: 101;
+  }
+
+  .navigation__item {
+    padding: 13px 20px 9px 19px;
+    border-radius: 28px;
+    border: 2px solid $color-border;
+    width: 300px;
+  }
+}

@@ -1,0 +1,27 @@
+html {
+  font-size: 10px;
+  scroll-behavior: smooth;
+}
+
+body {
+  height: 100%;
+  @extend %font-prim;
+  color: $color-primary;
+  background: $color-background;
+}
+
+body._lock {
+  overflow: hidden;
+}
+
+[class*="__container"] {
+  max-width: 1640px;
+  margin: 0 auto;
+}
+
+h1 {
+  @extend%font-add;
+  text-transform: uppercase;
+  color: $color-primary;
+  @include font($size: 9.6rem, $height: 9.6rem, $weight: 400);
+}

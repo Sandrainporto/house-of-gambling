@@ -1,0 +1,79 @@
+.banner__info {
+  flex: 0 1 39.8%;
+  margin-top: 18.51%;
+  margin-left: 4px;
+
+  @media screen and (max-width:1650px) {
+    text-align: center;
+    margin-top: 70px;
+    max-height: 950px;
+    margin-left: 0px;
+  }
+}
+
+.info__title {
+  @extend%font-add;
+  text-transform: uppercase;
+  color: $color-primary;
+  @include font($size: 9.6rem, $height: 100%, $weight: 500);
+  font-size: calc(36px + 50 * (100vw / 1670));
+  margin-bottom: 24px;
+
+  @media screen and (min-width:1620px) {
+    font-size: 96px;
+  }
+
+  @media screen and (max-width:1031px) {
+    line-height: 5rem;
+    margin-bottom: 10px;
+  }
+
+  span {
+    color: $color-additional;
+  }
+}
+
+.info__text {
+  color: $color-paragraphs;
+  @include font($size: 3.2rem, $height: 3.2rem, $weight: 500);
+  font-size: calc(17px + 12 * (100vw / 1640));
+  margin-bottom: 67px;
+
+  @media screen and (min-width:1620px) {
+    font-size: 32px;
+  }
+
+  @media screen and (max-width:1031px) {
+    line-height: 2.6rem;
+    margin-bottom: 35px;
+    margin-left: -3px;
+  }
+}
+
+.info__btn {
+  color: $color-primary;
+  @include font($size: 2.4rem, $height: 3.2rem, $weight: 600);
+  font-size: calc(18px + 6 * (100vw / 1640));
+  text-transform: uppercase;
+  padding: 20px 72px;
+  border-radius: 48px;
+  background: $color-btn;
+
+  @media screen and (min-width:1620px) {
+    font-size: 24px
+  }
+
+  @media screen and (max-width:1031px) {
+    font-size: 1.8rem;
+    padding: 15px 56px;
+  }
+
+  &:hover {
+    background: $color-primary;
+    color: $color-additional;
+  }
+
+  &:active {
+    transform: translate(0, 0.25em);
+  }
+}

@@ -1,0 +1,12 @@
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  min-height: 100%;
+  max-width: $content-width;
+  margin: 0 auto;
+
+  @media screen and (max-width:1031px) {
+    padding: 0px;
+  }
+}

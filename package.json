@@ -1,0 +1,19 @@
+{
+  "name": "house-of-gambling",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "style": "sass --watch src/sass/style.scss src/sass/style.css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Sandrainporto/house-of-gambling.git"
+  },
+  "author": "sandrainporto",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Sandrainporto/house-of-gambling/issues"
+  },
+  "homepage": "https://github.com/Sandrainporto/house-of-gambling#readme"
+}

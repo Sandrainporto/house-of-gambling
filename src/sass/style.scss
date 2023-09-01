@@ -1,0 +1,28 @@
+//Abstract
+@import "./abstract/constants";
+@import "./abstract/placeholders";
+@import "./abstract/mixins";
+
+//Base
+@import "./base/normalize";
+@import "./base/base";
+@import "./base/logo";
+
+
+
+
+//Layouts
+@import "./layouts/wrapper";
+@import "./layouts/header";
+@import "./layouts/main";
+@import "./layouts/footer";
+@import "./base/burger";
+
+
+//Components
+@import "./components/navigation";
+@import "./components/info";
+@import "./components/blog";
+@import "./components/animation";
+@import "./components/footerLinks";
+@import "./components/socialLinks";

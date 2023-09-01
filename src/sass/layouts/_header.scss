@@ -1,0 +1,34 @@
+.header {
+  margin-top: 29px;
+  padding: 0 15px
+}
+
+.header__container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  align-items: center;
+  padding: 19px 41px 20px 48px;
+  border-radius: 64px;
+  border: 4px solid $color-border;
+
+}
+
+.navigation__content {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+
+}
+
+.header__burger {
+  display: none;
+}
+
+.language-btn__image_globe {
+  display: none;
+}

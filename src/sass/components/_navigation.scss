@@ -1,0 +1,87 @@
+.header__navigation {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex: 0 1 68.35%;
+}
+
+.navigation__list {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    gap: 32px;
+    width: 588px;
+
+    @media screen and (max-width: 1031px) {
+        display: flex;
+        flex-direction: column;
+        gap: 5px;
+        width: 100%;
+    }
+
+}
+
+.navigation__link {
+    color: $color-primary;
+    @include font($size: 1.6rem, $height: 2rem, $weight: 400);
+
+    @media screen and (max-width: 1031px) {
+        @include font($size: 1.8rem, $height: 2.4rem, $weight: 400);
+    }
+
+    &:hover {
+        border-bottom: 2.5px solid $color-border;
+    }
+}
+
+.header__buttons {
+    width: 287px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: nowrap;
+    align-items: center;
+
+    @media screen and (max-width: 1031px) {
+        display: flex;
+        flex-direction: column;
+    }
+
+}
+
+.link {
+    text-transform: uppercase;
+    color: $color-primary;
+    @include font($size: 1.6rem, $height: 2rem, $weight: 400);
+    @extend %transition;
+    padding: 13px;
+    border-radius: 24px;
+    border: 2px solid $color-border-btn;
+
+    &:hover {
+        border: 1px solid $color-border;
+        background: $color-btn;
+    }
+
+    &:active {
+        transform: translate(0, 0.25em);
+    }
+}
+
+.language-btn {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: center;
+    gap: 8px;
+}
+
+.buttons__signup-btn {
+    border: 1px solid $color-border;
+    background: $color-btn;
+
+    &:hover {
+        background: $color-primary;
+        color: $color-additional;
+    }
+}

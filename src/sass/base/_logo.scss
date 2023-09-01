@@ -1,0 +1,30 @@
+.header__logo {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  gap: 12px;
+  align-items: center;
+  color: $color-primary;
+  height: 32px;
+  margin-right: 10px;
+
+  &:hover {
+    filter: drop-shadow(1px 1px 20px $color-primary) invert(5%)
+  }
+}
+
+
+.logo__image {
+  @media screen and (max-width: 1150px) {
+    display: none;
+  }
+}
+
+.logo__title {
+  text-transform: uppercase;
+  @include font($size: 2.3rem, $height: 2rem, $weight: 400);
+
+  @media screen and (max-width: 1380px) {
+    display: none;
+  }
+}
