@@ -7,8 +7,7 @@
   max-width: $content-width;
   margin: 0 auto;
 
-
-  @include media-mobile {
-    padding: 0 5px;
+  @media screen and (max-width:1031px) {
+padding: 0px;
   }
 }

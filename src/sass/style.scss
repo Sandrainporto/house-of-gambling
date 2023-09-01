@@ -5,6 +5,7 @@
 @import "./abstract/mixins";
 
 //Base
+@import "./base/normalize";
 @import "./base/base";
 @import "./base/buttons";
 @import "./base/logo";
@@ -12,7 +13,7 @@
 @import "./base/tags";
 @import "./base/hamburger";
 @import "./base/modal";
-@import "./base/normalize";
+
 
 
 //Layouts

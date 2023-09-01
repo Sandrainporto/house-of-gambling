@@ -10,7 +10,7 @@
     flex-wrap: nowrap;
     gap: 32px;
     width: 588px;
-    @media screen and (max-width: 1030px) {
+    @media screen and (max-width: 1031px) {
      
           display: flex;
           flex-direction: column;
@@ -24,7 +24,7 @@
 .navigation__link {
     color: $color-primary;
     @include font($size: 1.6rem, $height: 2rem, $weight: 400);
-    @media screen and (max-width: 1030px) {
+    @media screen and (max-width: 1031px) {
 
         @include font($size: 1.8rem, $height: 2.4rem, $weight: 400);
 
@@ -41,7 +41,7 @@
     justify-content: space-between;
     flex-wrap: nowrap;
     align-items: center;
-    @media screen and (max-width: 1030px) {
+    @media screen and (max-width: 1031px) {
      
         display: flex;
         flex-direction: column;

@@ -6,12 +6,21 @@
   display: flex;
   flex-wrap: nowrap;
   gap: 40px;
+  @media screen and (max-width:1262px) {
+    flex-direction: column;
+ align-items: flex-start;
+ gap: 2px;
+   }
 }
 .links__item {
 }
 .links__link {
   color: $color-primary;
   @include font($size: 1.6rem, $height: 2rem, $weight: 400);
+  font-size: calc(13.61px + 2 * (100vw / 1640));
+  @media screen and (max-width:1031px) {
+    padding: 0px;
+        }
   &:hover {
     border-bottom: 2.5px solid $color-border;
 }
@@ -19,4 +28,7 @@
 
 .links__link_colored {
   color: $color-additional;
+  @media screen and (max-width:1262px) {
+    color: $color-primary;
+  }
 }

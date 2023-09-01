@@ -1,65 +1,119 @@
-.banner__blog{
+.banner__blog {
   flex: 0 1 32.37%;
   margin-top: 146px;
 
+  @media screen and (max-width:1650px) {
+    flex: 0 1 auto;
+    margin-top: -333px;
+    padding: 0 10px;
+  }
+
+
 }
-.blog__content{
+
+.blog__content {
   display: flex;
   flex-direction: column;
   align-items: center;
   gap: 24px;
+
+  @media screen and (max-width: 1031px) {
+    gap: 20px;
+    padding: 0 10px;
+  }
 }
 
-.blog__title{
+.blog__title {
   @include font($size: 4rem, $height: 4rem, $weight: 600);
   text-transform: uppercase;
+  font-size: calc(32px + 8 * (100vw / 1640));
+  @media screen and (min-width:1620px) {
+    font-size: 40px;
+    
+      }
 }
 
-.blog__articles{
-
-overflow: hidden;
+.blog__articles {
+  overflow: hidden;
   border-radius: 100px;
-border: 3px solid $color-border;
-background: $color-background-light;
-padding: 22px 40px 0px 24px;
+  border: 3px solid $color-border;
+  background: $color-background-light;
+  padding: 22px 40px 0px 24px;
+
+  @media screen and (max-width: 1031px) {
+    border: 2px solid $color-border;
+
+    padding: 5px 18px 0px 15px;
+    border-radius: 50px;
+  }
 }
-.articles__list{
+
+.articles__list {
   display: flex;
   flex-direction: column;
   gap: 16px;
   height: 567px;
   overflow-y: scroll;
-  &::-webkit-scrollbar{
+
+  @media screen and (max-width:1650px) {
+    height: 409px;
+    gap: 10px;
+  }
+
+  &::-webkit-scrollbar {
     width: 8px;
     background-color: #f9f9fd;
     border-radius: 10px;
-background: $color-background-light;
-}
-&::-webkit-scrollbar-thumb {
-  border-radius: 10px;
-  background-clip: content-box;
+    background: $color-background-light;
+  }
 
-  background: $color-additional;
-}
+  &::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    background-clip: content-box;
+    background: $color-additional;
+  }
 }
 
-
-.article{
+.article {
   border-radius: 196px;
   background: $color-article-background;
   padding: 16px 64px;
+  cursor: pointer;
+
+  &:hover {
+    background: $color-additional;
+  }
+
+  @media screen and (max-width: 1031px) {
+    border-radius: 40px;
+  }
+
+  @media screen and (max-width:841px) {
+    padding: 15px 0px 15px 35px;
+    width: 260px;
+  }
 }
-.articles__text-link{
+
+.articles__text-link {
   color: $color-primary;
   @include font($size: 2.4rem, $height: 2.8rem, $weight: 400);
- 
+  font-size: calc(14.5px + 8 * (100vw / 1640));
+
+  @media screen and (max-width:1031px) {
+    margin-left: -3px;
+    line-height: 2rem;
+
+  }
 }
-.articles__date{
+
+.articles__date {
   color: $color-paragraphs;
   @extend%font-prim;
   @include font($size: 1.4rem, $height: 1.6rem, $weight: 450);
-margin-top: 14px;
+  margin-top: 14px;
 
+  @media screen and (max-width:841px) {
+    margin-top: 6px;
 
-
+  }
 }

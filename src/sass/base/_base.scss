@@ -5,10 +5,15 @@ html {
 
 body {
     height: 100%;
+    // width: 100%;
     @extend %font-prim;
     color: $color-primary;
     background: $color-background;
+    // overflow-x:hidden;
 }
+body._lock {
+    overflow: hidden;
+  }
 
 [class*=__container] {
     max-width: 1640px;

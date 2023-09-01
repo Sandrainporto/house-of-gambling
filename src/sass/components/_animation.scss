@@ -5,6 +5,22 @@
   display: flex;
   gap: 15px;
 
+  @media screen and (max-width:1650px) {
+    transform: rotate(90deg);
+    margin-top: -300px;
+    height: 500px;
+  }
+  @media screen and (max-width:1031px) {
+    max-height: 100vh;
+    margin-top: -285px;
+    margin-bottom: 35px;
+}
+  
+  @media screen and (max-width:500px) {
+
+
+    gap: 8px;
+  }
 }
 
 
@@ -29,14 +45,29 @@
   }
 }
 
+@keyframes imagesliderDownV {
+  0% {
+    transform: translate(0%, 0);
+  }
 
+  100% {
+    transform: translate(-100%, 0);
+  }
+}
 .animation__chain img {
   display: block;
   width: 100px;
   height: 109%;
+  
   animation-delay: 0s;
   animation-direction: normal;
   animation-fill-mode: none;
+  @media screen and (max-width:1031px) {
+    width: 50px;
+    height: 70.5%;
+    
+
+  }
 }
 
 .animation__chain_up {
@@ -50,5 +81,9 @@
 .animation__chain:last-child img {
 
   height: 115%;
+  @media screen and (max-width:1031px) {
+    
+    height: inherit;
 
+  }
 }

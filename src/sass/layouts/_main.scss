@@ -2,9 +2,26 @@
   flex: 1 1 auto;
 max-height: 1026px;
 overflow: hidden;
-padding: 0 15px
+padding: 0 15px;
+@media screen and (max-width:1650px) {
+
+  max-height: none;
+  
+    }
+    @media screen and (max-width:1031px) {
+padding: 0px;
+    }
 }
 .banner__container{
   display: flex;
   justify-content: space-between;
+  @media screen and (max-width:1650px) {
+flex-direction: column;
+align-items: center;
+justify-content: flex-start;
+max-height: none;
+&:last-child{
+ margin-bottom:119px ;
+}
+  }
 }
