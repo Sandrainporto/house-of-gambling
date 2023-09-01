@@ -12,27 +12,37 @@ burgerIcon.addEventListener("click", () => {
 	document.body.classList.toggle('_lock');
 })
 
-  opacity.addEventListener('click', () => {
-    burgerMenu.classList.remove('active');
-		burgerIcon.classList.remove('active');
-		span.classList.remove('active');
-		document.body.classList.remove('_lock');
+  burgerMenu.addEventListener('click', () => {
 
-  });
-
-  burgerMenu.addEventListener('click', (e) => {
-    const target = e.target;
-		console.log(target)
-    if (target) {
 			burgerMenu.classList.remove('active');
 			burgerIcon.classList.remove('active');
 			span.classList.remove('active');
 			document.body.classList.remove('_lock');
-    }
-  });
+    })
+	}
 
-
-
-
-}
 createBurger()
+
+function addLanguageChange() {
+
+	const languageBtn = document.querySelector('.language-btn')
+	const languageBtnNoText = document.querySelector('.language-btn__image_globe')
+	const language = document.querySelector('.language-btn__text')
+
+	languageBtn.addEventListener('click', ()=>{
+		language.classList.toggle('russian');
+		if(language.classList.contains('russian')){
+		language.textContent ='RU'
+		}else{
+			language.textContent ='En'
+		}
+	}
+	)
+	
+	languageBtnNoText.addEventListener('click', ()=>{
+		languageBtnNoText.classList.toggle('russian');
+	}
+	)
+	
+	}
+	addLanguageChange()

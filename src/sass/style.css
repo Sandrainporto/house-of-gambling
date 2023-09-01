@@ -269,7 +269,7 @@ h1 {
     position: fixed;
     z-index: 10;
     top: 72px;
-    right: -100%;
+    right: -135%;
     width: 320px;
     height: 569px;
     background: #110A1D;
@@ -301,6 +301,7 @@ h1 {
   }
   .language-btn__image_globe {
     display: block;
+    cursor: pointer;
     z-index: 101;
   }
   .navigation__item {
@@ -659,7 +660,7 @@ h1 {
   }
 }
 
-.articles__text-link {
+.articles__text {
   color: #FFFFFF;
   font-size: 2.4rem;
   font-style: normal;
@@ -668,7 +669,7 @@ h1 {
   font-size: calc(14.5px + 0.487804878vw);
 }
 @media screen and (max-width: 1031px) {
-  .articles__text-link {
+  .articles__text {
     margin-left: -3px;
     line-height: 2rem;
   }

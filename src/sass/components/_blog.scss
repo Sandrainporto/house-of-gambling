@@ -94,7 +94,7 @@
   }
 }
 
-.articles__text-link {
+.articles__text {
   color: $color-primary;
   @include font($size: 2.4rem, $height: 2.8rem, $weight: 400);
   font-size: calc(14.5px + 8 * (100vw / 1640));
